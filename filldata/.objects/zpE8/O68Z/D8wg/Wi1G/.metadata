@@ -1,0 +1,13 @@
+﻿{
+  "Name": "إرسال",
+  "Type": "Element",
+  "Id": "Wi1G5NgEk0KkIPsES7yk-g",
+  "Reference": "Q0ALeOvFSU2wA1Dvkp5Zyg/Wi1G5NgEk0KkIPsES7yk-g",
+  "ParentRef": "Q0ALeOvFSU2wA1Dvkp5Zyg/D8wg4LfRYUGmQU6mtVg88Q",
+  "Created": "2026-07-06T23:21:15.5027434Z",
+  "Updated": "2026-07-06T23:21:15.5027434Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

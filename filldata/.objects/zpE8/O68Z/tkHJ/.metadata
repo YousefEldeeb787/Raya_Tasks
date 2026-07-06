@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge What's new in Microsoft Edge",
+  "Type": "Screen",
+  "Id": "tkHJe10MeE-rIJcCm7hxaQ",
+  "Reference": "Q0ALeOvFSU2wA1Dvkp5Zyg/tkHJe10MeE-rIJcCm7hxaQ",
+  "ParentRef": "Q0ALeOvFSU2wA1Dvkp5Zyg/O68ZHQq-eE-jCC3mu4vBvA",
+  "Created": "2026-07-06T23:09:24.8384635Z",
+  "Updated": "2026-07-06T23:09:24.8384635Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

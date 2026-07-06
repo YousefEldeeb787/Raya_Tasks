@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge What's new in Microsoft Edge",
+  "Type": "App",
+  "Id": "zpE8uu8PQkCaInJS0-a7fA",
+  "Reference": "Q0ALeOvFSU2wA1Dvkp5Zyg/zpE8uu8PQkCaInJS0-a7fA",
+  "Created": "2026-07-06T23:09:24.6618825Z",
+  "Updated": "2026-07-06T23:09:24.6618825Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

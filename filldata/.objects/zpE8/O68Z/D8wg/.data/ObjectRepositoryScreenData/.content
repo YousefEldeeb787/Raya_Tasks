@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="nS8Mft01Ukinp9uIIaizow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="952, 0, 976, 1028" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGmSURBVDhPrZO/SwJhGMfPtb+gqKHRMShodejuH4jOtjYNKur1jIrGIMOhIigpMTWCCqIGoTQozdY0jbZouYuwNguXoPfbc95bnpdL1Bc+HO+Pz3PPI6f0r9E0uH0+tInlbwKXxvhNKMQxO8NrQQbVn8DBRJhjap4joHFoATsfu0K0EpyCJ7TIYaZQAAKM5/xJIJriKN0BpTJQLlkcH1lFhGplehrt9GZeLAI7SbrAPlapg+rCNkd8nyNBe8mExeoKdcT4u1Ab0RhG6ODebI8xdPr30De+xM/Y3I8RboOT6BdaI6qiL3tlveJV9PywYvSrsj5G6wevYsCOqhgv5l2hWRmSH3uaLg0Yh6psvNn3nAwqT26hS5K5sB/WCyjGq33PSVMBM18jUOtX3yMohu4UW45g5jSHcDqLSjqHfOYKvRsxjBEPBOysx/BCz7DQrKTz6CCREzA5ucAWXaw6ZRt8LYouoVOBLEa/5HqBczy3kJyMCp0+ZMBFIxRNmZ619CVU6mC3hVSHzuh7hUvojWSycKeuG3+mSBzdkSg8djbjaP71/xZJ+gQSeMtxBDxl6wAAAABJRU5ErkJggg==" Selector="&lt;html app='msedge.exe' title='Contact information' /&gt;" Url="https://docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" Version="V3">
+      <imageRef attrName="InformativeScreenshot" originalValue="4fedeff91c90ce1b88c7758ec701df1d.jpg" xmlns="">0wF3vHp87cUGPTeQ6XHvvbA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
