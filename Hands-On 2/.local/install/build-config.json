@@ -1,0 +1,7 @@
+{
+  "Version": "1.0",
+  "IncludeWorkflows": [
+    "Main.xaml",
+    "checkandcreatefolder.xaml"
+  ]
+}
