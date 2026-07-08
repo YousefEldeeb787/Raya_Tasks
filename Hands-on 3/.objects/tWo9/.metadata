@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome donjon; Random Weather Generator",
+  "Type": "App",
+  "Id": "tWo9jFt_8kS5z9d0TDK0-w",
+  "Reference": "e6Tmwi5uuEGorg6_d8uskg/tWo9jFt_8kS5z9d0TDK0-w",
+  "Created": "2026-07-08T14:08:54.8949181Z",
+  "Updated": "2026-07-08T14:08:54.8949181Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

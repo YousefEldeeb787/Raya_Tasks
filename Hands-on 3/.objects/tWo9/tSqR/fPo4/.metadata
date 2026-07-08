@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome donjon; Random Weather Generator",
+  "Type": "Screen",
+  "Id": "fPo4tt1Z_UmxGT1aMmWy_g",
+  "Reference": "e6Tmwi5uuEGorg6_d8uskg/fPo4tt1Z_UmxGT1aMmWy_g",
+  "ParentRef": "e6Tmwi5uuEGorg6_d8uskg/tSqRohdu50SATdtEjee5RA",
+  "Created": "2026-07-08T14:08:55.1257365Z",
+  "Updated": "2026-07-08T14:08:55.1257365Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

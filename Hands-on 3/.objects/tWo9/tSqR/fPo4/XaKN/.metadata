@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Cold An unprotected ch…",
+  "Type": "Element",
+  "Id": "XaKNfJxY2U6VLkBNtCimfQ",
+  "Reference": "e6Tmwi5uuEGorg6_d8uskg/XaKNfJxY2U6VLkBNtCimfQ",
+  "ParentRef": "e6Tmwi5uuEGorg6_d8uskg/fPo4tt1Z_UmxGT1aMmWy_g",
+  "Created": "2026-07-08T14:39:27.0210565Z",
+  "Updated": "2026-07-08T14:39:27.0210565Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

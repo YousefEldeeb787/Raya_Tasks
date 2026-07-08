@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uXREWdJ_xUqAF0MyWY_mqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="donjon.bin.sh/d20/weather" CVScreenId="2d7050fd-2e22-4e75-9b7d-b34786d23429" CvTextArea="559, 673, 62, 25" CvTextArgument="Windy" CvType="Text" DesignTimeRectangle="553, 667, 468, 34" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Windy' tag='DIV' /&gt;" Guid="b79e649e-0c99-40af-9bd5-206c8618c7a5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="85, 667, 468, 34" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='key' tag='DIV' type='' aaname='Description:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Description:' /&gt;" Guid="d6098931-658b-48f3-8671-d850c1afc79b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="67b08ef980c813683fc04ae1c4bd3428.jpg" xmlns="">0HSS6aRLFN0C2Ir5M0dQRuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
