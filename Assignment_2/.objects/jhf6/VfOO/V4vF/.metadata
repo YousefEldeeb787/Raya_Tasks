@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome www.accuweather.com",
+  "Type": "Screen",
+  "Id": "V4vFnIIV8UelOIR5yuTaTQ",
+  "Reference": "O1ZDTFPpWEy-Pi94PROmHA/V4vFnIIV8UelOIR5yuTaTQ",
+  "ParentRef": "O1ZDTFPpWEy-Pi94PROmHA/VfOOLjWWbEeh9VU1dXlaig",
+  "Created": "2026-07-09T08:18:54.3817631Z",
+  "Updated": "2026-07-09T08:18:54.3817631Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

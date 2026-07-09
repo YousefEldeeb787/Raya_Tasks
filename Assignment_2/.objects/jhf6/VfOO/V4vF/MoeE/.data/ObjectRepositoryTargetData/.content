@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rbT0gPjAokefIrg366xA1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="accuweather.com/en/eg/cairo/127164/weather-forecast/127164" DesignTimeRectangle="252, 745, 62, 31" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="7ee72f26-94a8-4840-ae7b-b6f713d1a39a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cairo, Cairo, Egypt Weather Forecast | AccuWeather' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="117, 684, 122, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Today&amp;apos;s Weather' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' tag='H2' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='TODAY&amp;apos;S WEATHER' /&gt;" Guid="cf06ea44-8baf-41c7-a967-112ef5cdffd4" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fa99c91b8551683a4341a1d12faaad42.jpg" xmlns="">0a084zoW0FkW29c75zClplQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

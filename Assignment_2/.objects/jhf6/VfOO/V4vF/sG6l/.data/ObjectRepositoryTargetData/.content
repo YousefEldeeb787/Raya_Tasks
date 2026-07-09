@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dCF-qL7XR0CwiOhtnOU93g" Reference="O1ZDTFPpWEy-Pi94PROmHA/sG6liE1W8EG0Cxo81VPNMg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="accuweather.com/en/search-locations" DesignTimeRectangle="92, 298, 790, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='location-name' matching:class='fuzzy' fuzzylevel:class='0.0' tag='P' type='' aaname='Cairo' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="afe4c15a-90f6-4bb7-b756-7f4b5842f0e7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Find Your Location&amp;apos;s Weather Forecast | AccuWeather' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="92, 246, 790, 37" FuzzySelectorArgument="&lt;webctrl class='search-results-heading' matching:class='fuzzy' fuzzylevel:class='0.0' tag='DIV' type='' aaname=' &amp;#x9;&amp;#x9;Showing  locations for  &amp;#x9;&amp;#x9;' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Showing * locations for *' /&gt;" Guid="143aaff7-2c90-41f8-96a1-344b9e5a2b61" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ac80796a979d80c5a48ff20bfb0889d0.jpg" xmlns="">0bOU5JWMFZ0itgOKS6KKATw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+{
+  "Workflows": [
+    {
+      "Path": "RandomWeather.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

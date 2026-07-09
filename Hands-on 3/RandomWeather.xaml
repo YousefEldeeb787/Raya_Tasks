@@ -91,9 +91,10 @@
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RandomWeather" sap:VirtualizedContainerService.HintSize="484.8,1174.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RandomWeather" sap:VirtualizedContainerService.HintSize="527.2,472.4566666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_season" />
       <Variable x:TypeArguments="x:String" Name="str_climate" />
@@ -104,14 +105,29 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Taking User Input" sap:VirtualizedContainerService.HintSize="484.8,121.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Taking User Input" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Chossing Climate" sap:VirtualizedContainerService.HintSize="416,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Climate" OptionsString="Cold;warm" Title="chosse Climate" TopMost="False">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">str_climate</CSharpReference>
+          </OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">str_season</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
     </Sequence>
-    <Sequence DisplayName="Entring Data" sap:VirtualizedContainerService.HintSize="484.8,56.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Entring Data" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -225,7 +241,7 @@
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.CloseMode>
           <InArgument x:TypeArguments="uix:NAppCloseMode">
-            <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">UiPath.UIAutomationNext.Enums.NAppCloseMode.Always</CSharpValue>
+            <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
           </InArgument>
         </uix:NApplicationCard.CloseMode>
         <uix:NApplicationCard.OCREngine>
@@ -252,46 +268,53 @@
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
     </Sequence>
-    <ui:InputDialog Options="{x:Null}" DisplayName="Chossing Climate" sap:VirtualizedContainerService.HintSize="484.8,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Climate" OptionsString="Cold;warm" Title="chosse Climate" TopMost="False">
-      <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:String">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">str_climate</CSharpReference>
-        </OutArgument>
-      </ui:InputDialog.Result>
-    </ui:InputDialog>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1">
-      <ui:LogMessage.Message>
-        <InArgument x:TypeArguments="x:Object">
-          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">str_season</CSharpValue>
-        </InArgument>
-      </ui:LogMessage.Message>
-    </ui:LogMessage>
-    <Sequence DisplayName="Getting Exctraction data" sap:VirtualizedContainerService.HintSize="484.8,471.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="Getting Exctraction data" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome donjon; Random Weather Generator" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,388" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="eb1c0a35-63de-454c-8d1e-b10eeccde7a5" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome donjon; Random Weather Generator" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="eb1c0a35-63de-454c-8d1e-b10eeccde7a5" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,193.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,368" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="str_results" />
+              </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText DisplayName="Get Text 'Cold An unprotected ch…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,133.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="eb1c0a35-63de-454c-8d1e-b10eeccde7a5" Version="V5">
+              <uix:NGetText DisplayName="Get Text 'Cold An unprotected ch…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="eb1c0a35-63de-454c-8d1e-b10eeccde7a5" Version="V5">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="donjon.bin.sh/d20/weather" ContentHash="Ft6EanqHTkGIhSIQbcsqzw" DesignTimeRectangle="393, 683, 956, 456" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;x-meta&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' tag='DIV' /&gt;" Guid="3e7525a9-6ff2-4b71-bff4-0c8ae8ceddc7" InformativeScreenshot="d71d6d215c519cdec11a4c2daab42854.jpg" Reference="e6Tmwi5uuEGorg6_d8uskg/XaKNfJxY2U6VLkBNtCimfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NGetText.Target>
+                <uix:NGetText.TextString>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">str_results</CSharpReference>
+                  </OutArgument>
+                </uix:NGetText.TextString>
               </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">str_results</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.CloseMode>
+          <InArgument x:TypeArguments="uix:NAppCloseMode">
+            <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">UiPath.UIAutomationNext.Enums.NAppCloseMode.Always</CSharpValue>
+          </InArgument>
+        </uix:NApplicationCard.CloseMode>
         <uix:NApplicationCard.OCREngine>
           <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
             <ActivityFunc.Argument>
@@ -299,6 +322,11 @@
             </ActivityFunc.Argument>
           </ActivityFunc>
         </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.OpenMode>
+          <InArgument x:TypeArguments="uix:NAppOpenMode">
+            <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">UiPath.UIAutomationNext.Enums.NAppOpenMode.Never</CSharpValue>
+          </InArgument>
+        </uix:NApplicationCard.OpenMode>
         <uix:NApplicationCard.TargetApp>
           <uix:TargetApp Area="952, 0, 976, 1028" BrowserType="Chrome" ContentHash="ErxfQ9_Zm02IhSAg3MzSpA" IconBase64="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" InformativeScreenshot="786c86f1d491b52340db6b8126581194.jpg" Reference="e6Tmwi5uuEGorg6_d8uskg/fPo4tt1Z_UmxGT1aMmWy_g" Selector="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" Url="https://donjon.bin.sh/d20/weather/" Version="V3">
             <uix:TargetApp.Arguments>
@@ -309,6 +337,12 @@
             </uix:TargetApp.WorkingDirectory>
           </uix:TargetApp>
         </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
     </Sequence>
   </Sequence>
