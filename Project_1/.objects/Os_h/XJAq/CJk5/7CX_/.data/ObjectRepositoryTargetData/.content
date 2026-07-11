@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z_nVlHmJiUGMwLSMkbvjdw" Reference="52JDjAi-80e2n-luKDesgg/7CX_lVhJgkik9hKgj2btqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/courses/search" DesignTimeRectangle="283, 550, 741, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='ud-link-neutral ud-custom-focus-visible' idx='{0}' /&gt;&quot;, int_Coumter)]" Guid="5ab81627-7812-4fff-b530-1540d798c8ec" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/courses/search/?srcUSIEQLSukw&amp;amp;qUSIEQLSai=1783615329844;usi_pv_count=23=1783615329844;' title='Search results | Udemy' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f3c4c1299eb45dcb7382b4b36a07ec4d.jpg" xmlns="">0tHjqE4e2eEGwcAxVjOHUhg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsString="False" Name="int_Coumter">
+        <ObjectRepositoryVariableData.DefaultValue>
+          <x:Int32>2</x:Int32>
+        </ObjectRepositoryVariableData.DefaultValue>
+      </ObjectRepositoryVariableData>
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

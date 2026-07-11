@@ -1,0 +1,266 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="UdemyRetriveCourseData" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="argument1" Type="InArgument(x:String)" />
+    <x:Property Name="outPrice_str" Type="OutArgument(x:String)" />
+    <x:Property Name="outRating_str" Type="OutArgument(x:String)" />
+    <x:Property Name="outAuthor_str" Type="OutArgument(x:String)" />
+    <x:Property Name="outTitle_str" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>UdemyRetriveCourseData_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.WorkflowEvents.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="UdemyRetriveCourseData" sap:VirtualizedContainerService.HintSize="521.6,2423.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Search results  Udemy" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,2400" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="9ad06c2a-adc5-4001-9e4d-328f62442019" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2205.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Default="2" Name="int_Coumter" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[int_Coumter &lt; 4]" DisplayName="While" sap:VirtualizedContainerService.HintSize="486.4,2145.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,2024" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="String_Price" />
+                    <Variable x:TypeArguments="x:Double" Name="Db_Price" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'The Complete AI Guide …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ad06c2a-adc5-4001-9e4d-328f62442019" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="udemy.com/courses/search" ContentHash="Z_nVlHmJiUGMwLSMkbvjdw" DesignTimeRectangle="283, 550, 741, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='ud-link-neutral ud-custom-focus-visible' idx='{0}' /&gt;&quot;, int_Coumter)]" Guid="5ab81627-7812-4fff-b530-1540d798c8ec" InformativeScreenshot="f3c4c1299eb45dcb7382b4b36a07ec4d.jpg" Reference="52JDjAi-80e2n-luKDesgg/7CX_lVhJgkik9hKgj2btqQ" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/courses/search/?srcUSIEQLSukw&amp;amp;qUSIEQLSai=1783615329844;usi_pv_count=23=1783615329844;' title='Search results | Udemy' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText DisplayName="Get Text 'Development'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="9ad06c2a-adc5-4001-9e4d-328f62442019" TextString="[outTitle_str]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp" ContentHash="DQxvA8JbbU-nmufmSBY5bQ" DesignTimeRectangle="242, 318, 945, 88" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' class='course-lede-module-scss-module__D37FTG__title ud-heading-xxl' parentclass='course-lede-module-scss-module__D37FTG__container' /&gt;" Guid="c5347546-e7da-4ec0-9710-2c1c255c0560" InformativeScreenshot="75b895f0ec1d07ac60d8927a3f0398ba.jpg" Reference="52JDjAi-80e2n-luKDesgg/mmJ-NtvGhk6qo5hn2E0_qg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/?couponCodeUSIEQLSUDEAFFHP22025=1783621100354;usi_pv_count=45=1783621100354;usi_subtotal==1784204301794;usi_pids=6112535=1784204301794;usi_prod_name_1=The AI E*' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text 'Created by'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,142.4" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="9ad06c2a-adc5-4001-9e4d-328f62442019" TextString="[outAuthor_str]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp" ContentHash="6aIB2yPWX0qbjnpgq6T0xA" DesignTimeRectangle="344, 577, 97, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='ud-btn-label' tag='SPAN' type='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="17396ef7-2798-409f-ac1c-54bda18505c8" InformativeScreenshot="ec25dcd113e9924b9c2246be15d44365.jpg" Reference="52JDjAi-80e2n-luKDesgg/kK_9ZvZynky5PxrTDmIZ5g" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/?couponCodeUSIEQLSUDEAFFHP22025=1783617302057;usi_pv_count=30=1783617302057;usi_subtotal==1784200503068;usi_pids=6112535=1784200503068;usi_prod_name_1=The AI E*' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="242, 574, 97, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Created by' tag='SPAN' type='' class='instructor-display-module-scss-module__-KB2AG__created-by' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Created by' /&gt;" Guid="f475ea36-4274-45f4-92d0-79cd6b4e2579" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text '22,838 ratings'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,142.4" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="9ad06c2a-adc5-4001-9e4d-328f62442019" TextString="[outRating_str]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp" ContentHash="YW91lII_Nkm5v-nRWDS09A" DesignTimeRectangle="828, 690, 43, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='ud-heading-xl' tag='SPAN' type='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="3af9c19b-1b8b-42a0-afd0-cd07751aff11" InformativeScreenshot="35f8f6f3878467916f28609ee03a5248.jpg" Reference="52JDjAi-80e2n-luKDesgg/s-yrRLe1g02SRuSU7-AVKg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/?couponCodeUSIEQLSUDEAFFHP22025=1783617302057;usi_pv_count=30=1783617302057;usi_subtotal==1784200503068;usi_pids=6112535=1784200503068;usi_prod_name_1=The AI E*' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="794, 753, 111, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='ud-btn-label' matching:class='fuzzy' fuzzylevel:class='0.0' tag='SPAN' type='' check:innerText='*ratings' /&gt;" Guid="aa608f68-9a50-4477-94c7-97759653b730" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text 'EGP 229.20'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,142.4" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="9ad06c2a-adc5-4001-9e4d-328f62442019" TextString="[String_Price]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp" ContentHash="PSDEVS4FjU29J2U14IBMbA" DesignTimeRectangle="1422, 553, 176, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='_title-price_1oox9_69' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="e93a9119-8dd7-47c3-b6ce-61a7bd4e35ec" InformativeScreenshot="bf832d50de5bd6928e6c5e2fc1f3a99c.jpg" Reference="52JDjAi-80e2n-luKDesgg/sGU4abMTCUCEFNKg5rthpA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/?couponCodeUSIEQLSUDEAFFHP22025=1783617302057;usi_pv_count=30=1783617302057;usi_subtotal==1784200503068;usi_pids=6112535=1784200503068;usi_prod_name_1=The AI E*' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[outPrice_str]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[outPrice_str.Replace("EGP", String.Empty)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Double">[Db_Price]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">[CDbl(outPrice_str.Trim()).ToString()]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="NotePadSaveCourseData - Invoke Workflow File (NotePad\NotePadSaveCourseData.xaml)" sap:VirtualizedContainerService.HintSize="451.2,232.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="NotePad\NotePadSaveCourseData.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="InTitle">[outTitle_str]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="InPrice">[outPrice_str]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="InAuthor">[outAuthor_str]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="InRating">[outRating_str]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <If Condition="[GlobalVariablesNamespace.GlobalVariables.least_Price &lt;= Db_Price]" sap:VirtualizedContainerService.HintSize="451.2,453.6" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Double">[GlobalVariablesNamespace.GlobalVariables.least_Price]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Double">[Db_Price]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <Assign sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_Coumter]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[int_Coumter+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="7pD74pRr9kSshFGMi05l_g" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAABDZSURBVGhDvZgJdJNluse/tEmapk2TtrRpS5d0T5e0adKV0jRpoTukrLaltEVkExWvg1e2UhhlkEVbSqXKroiOK4ieO84IVFmcq6KM95wZd4sj4HiQtqAzAgnv/573/ZYmERn1eO9zzv/8n+d5vy/f73m/70sDHPcrhEbur2uKCuu4Py2ue48p+cCpcTmDn5aZh7+uyMfXFQX41JY3/E5J9uABS/rA/alx3dURusZYldLAcZyW47g2juMOchz3oTo45HJi0fjL+izzB5y/8gDHcbNlMhk95tcPCr0gTr/kgDltQATl3SN3iDWvfzisTP9TmosF8VFEIZNd5zgOVAFKJWonNeD+ffux5eWXMWdZJ5Iyc6AJDv6e47gejuP0vgy/KCj4vYaYrk/Kcoe+dlgJA7NbvJ2CO3j37FHtM6WQUFUAg84056JnZzc2bl2PqfVVaJzuxNpX/oTtx45h3x8OoqW1DTrdGAQGBkMmk13iOM7py/Oz4l5DdNcn0qMh7ugoHOuVW4i401+VW8hX5XmsPlduwb2JY6FQyBm80ZiMF948hGXrlqLrgSWYd2sT5MGhmHPiI3R98g22nnwbZfYyKJUBiI6OgSZYQ4cgHMet4jhO5st206DP65H8rNN0N5kooI+LoMztVnxltwiix1ix1ZgAPz8/yOVyyDgZurdvwu8P7UR1tR3NzU7c0jgRCo7D2Pwy3P7nz/Db/U/Bmm9mw/r7+0OnCYE2KAgB/AbM8WX80ZipH9P+8fjcYQnQbmFAo6CesILKLThPZcsj521m8mxOKvw5DkqlkgGVlhVjz1P92P98H+YvaMHsFifmtE1C1cQiRIQHw1qUj/bZ03DHPfPZ0P7+fvDz84dWo4U+PBxR4WHX1CrlRF/WH8TShKguEVYEE3eXwvFu5r2cX2fwNjM5X54nuAVV4VoGzh6d9HRseHgFNm1diVmtjXjimT50dS5Ge5sT8+fPwJ13NKFjdj3WbVgNm2O8dJ5SIYfZmIhbqorQ6LDClpdCv7l+PH4TH9XlubsiDL+zQm7LY/W5MgGY5rY8JrZmy8Pp4mwJQqsNwcrlS3DnomY4nZWIjIxAUFAg2mbVYW57Le5e3Iy21imYM3sa5s+7BQsWtCA/OxFNtUVY2OTArVNKMaMiB1WFWTAmxND3IdqXm8VMfXj7eQbl8TgINQ8qAArOQ5vpIHw+PpeIvj45lj0GMpkMmcZUzGx2wpKbBWNyDFqaKjG1sRRdy2dg07pZmN9RhcrSPLQ4HbiltgQLZ9owp3EcHAXpiNOHw08mg9xPDpVCCZnMj27KQl929sJ+UGIaYoBlZkIhKKjnrvLQZgGU97NizoYw42wZr+KQILpT7MU15xjR1DoVpQVm9GxegLXLGlFXnoNJjhwsabfj9hYbg77jtkno7FyILQ/dh/r6CdIdFOUvl4OTsfxVX37uraLMQa9dpEA0F4A8neWlOUSElTSeKpe5xp/tFNs9Q3gE4iL1mNU6GY/t+h02rl8Ki9GIxhoHFrdOxN3zamDNScHM5mlomTsDtVXjsXzVnQgN00HGAzMFBASwO8px3IgX/D1x+i5pF33AvQEpnIfoED69LwUP8OMHoAoNVGNsqA75OUZkGlNQXVOB3r6V6N3+ADZvWoKNG26FwTAWFfbxCAsPQ0lhLjo770JCfCw7X4D21BUJXjlGbdj0H/bR3SzNIV+W5vADSECjOV1jLmqciZytKcWlXf248t47cJ0/Bxp0t+j3OL1gdIgW/jI/yDkO5UUmLL61DnWVhcg1Z2FWswOVthwUW02YO3cmlP4KKBUKzJt3C/T6CAZP3yWfAUbvgGGhZa9tbyPeqyuQds8bUAAuzREk5rn4anoNg75RxMfHSxeMUAfDGBmF9pYyPLp9Mdavn4PpU6rQ2uqE3V6EosI8HDi0F8VFZsyY0YDySgeMyQYkxkX5gov6kN/9cLXB8tRUWJ+aikUPVElgfx9n8oHm9XdRJdlkuGcDrl++7AV9fpjglb9cxY6BKyi0TWG7J/OTISIwCFljY9A+3YbFc2qQEBuJufObcOyd57D0vtsQrNEgOTUJoVoNbps7Hb9b95/oXHU3GsqtiI2i74EM/vQPmx9/R4VfsRwXZovvMO93krz9jbDsn4L/mlEkAJoI83GiTAya5l+UZJORndu8wF8+fRUL936Hgq4RFK65xDypbgPCNRoUxyZiWoEJGjX/Q07jHwCdUoUAVQDGjctHc8sUaBUB7OeEKkAJfUQYkgxRWLi4FU883YdKWwE7TyGXI0gVKA7Af40a1zlOm590EgpPB2nbWMPDCtBfFFNoE74QVWLCUM+DHjt+HQv28OD5a0ZQsGYE+TTvGkHW7W8hJjQU909txSxbIeqs6dBr2Q8zxISEQKsLR2JqGmZOq4FGEYDQwCCEqYMQ4Mf/6IuJ0ePeZfOxcNEcJKWkQhMSAtnou2Bgj0/uvskk90knyXuyEeYnG0G9b0Ep+aI4i3xRks2AaX5GqM82VhHxsaHwk7ovS8BU1tWjonVkWjUarRZ0NldivtOC4rQ4BCgUiFQHI8eYggV3daB1diPyzFnQqpWQc34IVCgRoQ6CNjAYGk0IyssKcfu6BxGbmMZ+VkwuC4EuyE/HhVj1TvM+J3xVumsy/mozkTNFFJwOkQ3qZ4oyybevHJR2f/7ub2FdPeyhEVi7RmDx6NG7YDEYcNuEAixqsKK51IRIXQhUigCMDdFCoVAgUKVCRnoKyvJS0NyQD02gCiq5HM76CTBaClBSVoyp9Q6oVYEIVitx5mAq2mq1HVxMS1Z37hOTwcvJnA6Q88Qk8uCdZRL0YFEWBouzcHZKlQR/6PRVBnpj8UNIatqFW+0FKDbGoigpAWUZKfCT+SMsUM1Ag4ODoFarEa0NQWu1FVnxUdAFqtlvpjER4XDWO1BbYGQ/KXaujIbrTSMeuiuyh0teVjKQ8/hkmB6fRDyHMD3eQGj/rYlmMHhBFx9eLw1Q/9Al5HUOj2q1R34D2WdsQn5yHLJjo5BriIEuOJDBj1EHsb8VKYlxaJpUjIZKKwLkCoSoVOyFnlRfiam1ZTCE6nD/gii4TqYT10kjXlgfe5DL2Fw5mPP4JNxIpr0NpHldJRksyCCfF2SQwcJMfP/u2wz+w6/cMHcOM1E4Mb+5hpDV8gxaqkuwtMmG6eXZCAsKgj5Ig5DgYBRbc9BebUKaIQoqmQJKP39E6SPRVF+K5onZ+GOPAa6TqYTKfTINnz2fOMhl760nOXsngcrE1MBy2qc57R1y5rEBPi/MlL7zj/7tGnI7h3itErxziIHy7tnz7A+jcOlHaJl1D+rzjTCEhSJSo4FWrsDM9lbMa2tCUrgOYSo1khNjcc/d7VjekoTzr6TCdSKFuE7w7j6Zggt/SBzmTHsakL2nnlD/MVX21uDzfCP5zJpOxMen/+j3yFk1JEmE9erdIGfDCnnBwiPIrFuD4rIGlFsKkV86Dode3o2WWjNm1CeSfRvz8dGLOaCwrhNJxH0iGe4TKaxm+ckUcFl76kg2G8JT9cjeXc/yrN11JHN3HemZW4zPrEZpgG1H/uUFK8p0k9p3TezRzxKDgo7CikridTKZrsN1PJG4TyaxnMvoqx7O3F1Lsijw7nrQnHrWrjpW037mrlpS2F+D90sz4Tp/ll3o4HtXYFo5hOyVF5lTEOaeuY+Lx2b7HHfkb9cE+ksMisK6jhuI60QiqPgBElmPOZ+zHpey0T5IIakydtUSCXxXnSTap1q2pBT/OvUWu9a54esMiBcPd2P5rvnWF/HBeTf7TDLyZwblPm5ggKOKJ7Q32o8nVJ8+O3aQi11sOZC5sw6ZAmzmzlqvPGNnDaFi/Z11OPX8dul2d+y8hKyVF5G1ckjwn6+qzSPS513/bC1cxxPg9pHreDxcx+KI6zhVvFQf7tUPcFFNmd08HA/LhhFqKuOOapLBvIZQNXU7pQseePcqMldcROZKQSt4KNb7NxKPO/DuFenz3G+XENfxWOJmgNRjKTSFZTXvgo7H4aE7tD2ctmRsB4VkoDtqQMWG2SGK7/Hi67fOvy9dtH3HZWSsuCiJQmWs+EYC9VzzPuYi2ndckj6HfP2cCCpoLHEdiyG8x8LNerSOhfs4r8njVU7OP1CuY3Dba5C+vYoNYWR5NaHuKdqjx1Q+3Y7LV79jFz47dB0TNg7DuOIbBm5czvtoflHq0WPE3oRNwzg7fJ19xuUr38H9dhGF5UHfiGY5dbenM8UI69HEoPen/8PNcXG/KRgwbq8WQKuR/lgVYfVjYo/vs1rorXuzX9o9OkTbjksM7gcSBvDU7B2X2DlijHy8VoCicFGE6Vg07XnUUcR9LBpUtP/uzjGnpX9O6irjl6Q/RsF5pT06kYzWVV59tvYo39t6ap8EQePFU1dQsWEIacu/QfrybyQXNXv7CF70eOZpvPD+LgwN0MdDAvaQnriPeda83G9EYXa1ql0awE8l16V0O4ZTH51IqBigAEk9TRBdo+7Zo3eCPgKe8cE5N17761X0vvZPbD38T7x46nuvHadx+cq3WHeyH88dyoDrjUi6yxRYyPVws1xUJNxvRML1egShomvS4yNGWENSlwiV1l+F1P4JJK1/IpgerUKKUKdsm8CGoHWqsF7+5Czywod/9AK8Wfz3ub+gfN8sUr7TRiicpNfHECapjmAS4OF6PZwOgF33afZ4wdOgdyFps31IBEvdNhHMWT7Bq6bQUk3XhNq+rxXrTvQzwC8v/0MCpjnt9b79BKy7G/lzt03AmddiGBAPNoYO4J0P0NxrjSle7+e9+2KE1id1pQiwydsqiQTOXBRfJz9C19kdkXLaT3mEF+2Jzq979irIvU9Z4Ho9jLjfoGBhFFSADhVyqjBvHwglqztUXb7cXhG3rOi0CCFKhE95pFKQ57pv7dkTj69EUl8Fg6e5pd+OM3+KgluAYoADFDIMbgZLax1hvYFQuF4PZf7p0yGf+/L+IORhKkPiJttwcl8lRNGLejqF4d1BRDDqvBxsTZRvndxXge5njYQCuRmYjlwb0BIXk07oaQn1a0dDWI/qwsshw4Yfe3R8Q1MY1ZG41UGoxIvyqkTy1gpefRVI2lqB0WP4NVpL/a38MZ7njX+sVIAaheNzrQCshUtyDXEdDWHuLFU0+nLeNMJqk9bQi99Iib12CVLq9zp+cJwoQ6+d0HOonn0xiQcTAQdCcE1wHjaYuI5q6FC8jmrQ2RawxpfvJ4Wu1tDFwHodAgTvVCKYYYudJPXSoRxM0rpQi07VtCufAXnKPUBhvXuuo0GE9Y8GY3W74uYv7b8LdfaYxvgHxw8bttglkMQtDiRsKSeGLeWE5mIvcYud9aloTc/xrM+8GsbgKJi3guA6qibUrx0JJK4jgeTCIfVwW7W8w5fnF4U8VGWIXV00yAB7yomhR/Atdh6yp5wk9NiIuCZJWreRex7P5uEYqBoUkoHzPd6PBFLHO9tVpw162U97YX9OaGsSukSw+B4bMfSUM9D4bprzLuYJ3fwaVekjxTjzaijdZV4CqOuISoJ2HQkgF15SDne2yX/Z8/5Tg96N8Ob0PRSUQnoq7qEyNkBcdxlbi++2sf6OZwwM0HVERaF5HQ6Q8gsvKYY62/y7dEEyne/1/s+CDhJcENURvdR6moIz4IdtkvieDeP6iin8qCj4YSVxHVbi8MOKgTum+S/5fwW/UdBh6Muua0zqjlhkGohZVThIh4jdPJ78/rmxuPCSfPjj/fLB59fKD2xe5N89u1rW/mtB/y8sre071QT/2wAAAABJRU5ErkJggg==" InformativeScreenshot="2d66e75ce5fef2b08e592c815ef4ee8d.jpg" Reference="52JDjAi-80e2n-luKDesgg/CJk5lYWASkuO1-EXZwHnZQ" Selector="&lt;html app='chrome.exe' url='https://www.udemy.com/courses/*' /&gt;" Url="[&quot;https://www.udemy.com/courses/search/?src=ukw&amp;q=&quot;+GlobalVariablesNamespace.GlobalVariables.Str_course]" Version="V3">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

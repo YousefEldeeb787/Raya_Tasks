@@ -1,0 +1,123 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="UdemyCloseApp" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="UdemyCloseApp_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.WorkflowEvents.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="UdemyCloseApp" sap:VirtualizedContainerService.HintSize="718.8000000000001,408" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Udemy Online Courses for Skills, Caree(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,384.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e34ce4cb-a329-4774-85a0-da5e48732226" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,190.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CloseApplication DisplayName="Close Application 'push button  Close'" sap:VirtualizedContainerService.HintSize="416,130.4" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+              <ui:CloseApplication.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6d8d1ece-fb41-4d2d-84e6-781fd73d7fdb" InformativeScreenshot="77d29854550d8bb34b3d3539eac744d3" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI - Google Chrome' /&gt;&lt;ctrl name='Udemy: Online Courses for Skills, Careers &amp;amp; AI - Google Chrome -*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:CloseApplication.Target>
+            </ui:CloseApplication>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="952, 0, 976, 1028" BrowserType="Chrome" ContentHash="eQi0P28V3EGQebFxvyt8gQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADNklEQVRYR82Wz2sTQRTHc1NBvQmKN1EvolCaH9R6KApePbWx/gueFEE8qQgK4knwV7WUml8aehBjb0L9gYmWYhUVxIOHhmKT1nY32W2bpMn43uzb7O7sZDehRP3Ch25n3q/szM68QLuKR37vjAXV4URIeRgPKdOxkFKEv1WEnqeBkURQPT3av7iD3Dav8XDpYDysjEJwHWBtoseCyqNERD1AYTpXui+/DQLdAmq2wJ1SheJvjg2wrRS2PWHl4PxFCOYi2W8gmxPIxXr1PRTeW6ngSg+tqSxQk6nzOivn60xfqLPs5VWpjUA+GVk+Qmnkwl/ul/z5YInNZ2tM1MJMjU2eKUt9bOTHQtpuSucUrhMYfBIcmqRPqOz7kwprbFBGiRp1xn5OVtnESVUag5jB/UVpLcEEbjiZA0seVVil1KA0hjDZj4kKB5/tQlv0kcUyWLlKaQ3xT81jt6dgo9mFr/vFsPW6+bK8cy4L+thjOAgrZcdS0HcuNwbMAvw2nLkxUZ4FALDX7hrJ4YSDAc9DBl/n7J0136AI2qCt9xJwNH5i4vEqmfxbRAN0tssmuw4swwPc/XiJSA1MEhGFvTyrNUkdc39mOGa3QR/RRkIOC1gUBl2Ym9DUs1Mllw2O2dXOfgEKWEBFGHTRrQJgCdb/iwL++RL4bsIuFsA34Ygw6KJrBYSV+wHs4aSTNrpVQCKsDAbSh4rb4R9NnLSDXY9dmSF3AZlomWYNtXMUY25+H2ADKTFwUFuzruPsFfeFlLu2SrOMVbWGa17CCE+Ooh4QW2yZIafw0bpu9WKdX8HmXAaeVxetAn99qDl8JVTgCthH6Q1h9yoxbPL2kk7hDdWrjBVma5y60KG9uqBLY9i4QWktUUuWEwwdYEvmp2+P16W+NrK397MtlNYp7FLAYE5wcPDmos6Wvm442jB8Ln7eYFPnNKmPhTo/3re0l9LJha0zGOfdzk7Sx1X+NeD6Px3wbEJN5uK9y4cpjbfSPeVd4PBaCLAZsi3b8VbCdcLuFZw9zwgf8KK73nLN2xFWjg0kBOqkEA27HdenthnRiRnF8xt4D88FAH8hUuBjQeUeJB5qnnC+CgT+AO3suW1OmmBCAAAAAElFTkSuQmCC" InformativeScreenshot="313e22ab8781f386ce91d46594bbf353.jpg" Reference="52JDjAi-80e2n-luKDesgg/f99MCtLvBUuq2n0rv8hSXA" Selector="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/?im_refUSIEQLS0ivw4yyeOxyZWUyUCGW2SWtKUkuVFaz4JTuiXE0&amp;amp;sharedidUSIEQLS1370750&amp;amp;irpidUSIEQLS313262&amp;amp;utm_mediumUSIEQLSaffiliate&amp;amp;utm_sourceUSIEQLSimpact&amp;amp;utm_audienceUSIEQLSmx&amp;amp;utm_tacticUSIEQLS%22Germany%22%2C%22Subnetwork%22&amp;amp;*' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' url='https://www.udemy.com/*' /&gt;" Url="https://www.udemy.com/" Version="V3" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

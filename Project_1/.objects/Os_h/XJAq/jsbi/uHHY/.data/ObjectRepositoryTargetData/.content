@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7G_3r2VRaEGQDLVPtE8MYw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com" DesignTimeRectangle="573, 141, 607, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-form-autocomplete--8' tag='INPUT' /&gt;" Guid="87aa31e3-0bff-4faf-ab21-3dd78fead037" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_entry_url_1=https://www.udemy.com/=1783611855619;usi_pv_count=1=1783611855619;' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="438e7fc753fc45d1e274d2daae9964f3.jpg" xmlns="">0WMZg9HlZ0UGiJIb_v7thyw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

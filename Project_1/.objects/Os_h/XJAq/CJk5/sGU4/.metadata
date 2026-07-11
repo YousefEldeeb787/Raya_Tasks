@@ -1,0 +1,14 @@
+﻿{
+  "Name": "EGP 229.20",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "sGU4abMTCUCEFNKg5rthpA",
+  "Reference": "52JDjAi-80e2n-luKDesgg/sGU4abMTCUCEFNKg5rthpA",
+  "ParentRef": "52JDjAi-80e2n-luKDesgg/CJk5lYWASkuO1-EXZwHnZQ",
+  "Created": "2026-07-09T11:30:39.4149539Z",
+  "Updated": "2026-07-09T11:30:39.4149539Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

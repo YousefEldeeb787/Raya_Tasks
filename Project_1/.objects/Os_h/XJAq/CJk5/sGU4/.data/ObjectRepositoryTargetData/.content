@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PSDEVS4FjU29J2U14IBMbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp" DesignTimeRectangle="1422, 553, 176, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='_title-price_1oox9_69' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="e93a9119-8dd7-47c3-b6ce-61a7bd4e35ec" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/?couponCodeUSIEQLSUDEAFFHP22025=1783617302057;usi_pv_count=30=1783617302057;usi_subtotal==1784200503068;usi_pids=6112535=1784200503068;usi_prod_name_1=The AI E*' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bf832d50de5bd6928e6c5e2fc1f3a99c.jpg" xmlns="">0flFL6MzuQECukPmw4rjluQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

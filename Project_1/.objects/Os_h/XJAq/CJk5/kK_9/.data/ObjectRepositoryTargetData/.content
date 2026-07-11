@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6aIB2yPWX0qbjnpgq6T0xA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp" DesignTimeRectangle="344, 577, 97, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='ud-btn-label' tag='SPAN' type='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="17396ef7-2798-409f-ac1c-54bda18505c8" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/?couponCodeUSIEQLSUDEAFFHP22025=1783617302057;usi_pv_count=30=1783617302057;usi_subtotal==1784200503068;usi_pids=6112535=1784200503068;usi_prod_name_1=The AI E*' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="242, 574, 97, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Created by' tag='SPAN' type='' class='instructor-display-module-scss-module__-KB2AG__created-by' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Created by' /&gt;" Guid="f475ea36-4274-45f4-92d0-79cd6b4e2579" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ec25dcd113e9924b9c2246be15d44365.jpg" xmlns="">0ktHRGOPCAEa_pb3NQIa3GA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
