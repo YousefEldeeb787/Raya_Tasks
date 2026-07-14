@@ -10,6 +10,32 @@
       "Url": null,
       "Arguments": null,
       "Version": null
+    },
+    {
+      "ApplicationType": "Chrome",
+      "ExecutablePath": {
+        "Value": "chrome.exe",
+        "IsExpression": false
+      },
+      "Url": {
+        "Value": "\"https://www.udemy.com/courses/search/?src=ukw&q=\"+GlobalVariablesNamespace.GlobalVariables.Str_course",
+        "IsExpression": true
+      },
+      "Arguments": null,
+      "Version": null
+    },
+    {
+      "ApplicationType": "Chrome",
+      "ExecutablePath": {
+        "Value": "chrome.exe",
+        "IsExpression": false
+      },
+      "Url": {
+        "Value": "https://www.udemy.com",
+        "IsExpression": false
+      },
+      "Arguments": null,
+      "Version": null
     }
   ]
 }

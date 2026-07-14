@@ -1,6 +1,11 @@
 {
   "Version": "1.0",
   "IncludeWorkflows": [
+    "Main.xaml",
+    "Edge-Udemy/UdemyLaunchApp.xaml",
+    "Edge-Udemy/UdemySearchCourse.xaml",
+    "Edge-Udemy/UdemyRetriveCourseData.xaml",
+    "Edge-Udemy/UdemyCloseApp.xaml",
     "NotePad/NotePadSaveCourseData.xaml"
   ]
 }

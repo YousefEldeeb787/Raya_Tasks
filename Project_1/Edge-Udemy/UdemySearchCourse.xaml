@@ -90,13 +90,13 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UdemySearchCourse" sap:VirtualizedContainerService.HintSize="1012.8000000000001,634.0566666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UdemySearchCourse" sap:VirtualizedContainerService.HintSize="560.8000000000001,634.0566666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Udemy Online Courses for Skills, Caree" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,491.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="71a3c3bd-d217-443a-ade6-951017bc5642" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Udemy Online Courses for Skills, Caree" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,491.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="71a3c3bd-d217-443a-ade6-951017bc5642" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -108,12 +108,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search-form-autoc…(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,236.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="71a3c3bd-d217-443a-ade6-951017bc5642" Text="[GlobalVariablesNamespace.GlobalVariables.Str_course]" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search-form-autoc…(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,236.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="71a3c3bd-d217-443a-ade6-951017bc5642" Text="[GlobalVariablesNamespace.GlobalVariables.Str_course + &quot;[k(enter)]&quot;]" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="udemy.com" ContentHash="g2ubJy2DHE-fY2PGftY1DQ" DesignTimeRectangle="583, 141, 607, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-form-autocomplete--8' tag='INPUT' type='text' class='ud-text-input ud-text-input-small ud-text-sm ud-search-form-autocomplete-input js-header-search-field' placeholder='Search for anything' aaname='Search for anything' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="64f6050e-ef77-4830-ba30-8a3c49902a04" InformativeScreenshot="76aedf7f530eed24ea324131c60c5bab.jpg" Reference="52JDjAi-80e2n-luKDesgg/pyFf31Mw_0mudWaNzr3qsQ" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/courses/search/?srcUSIEQLSukw&amp;amp;qUSIEQLSAI=1783618930793;usi_pv_count=31=1783618930793;' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                <uix:TargetAnchorable BrowserURL="udemy.com" ContentHash="qCD-khC9HUq66_s-uEKVZw" DesignTimeRectangle="583, 192, 243, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="64f6050e-ef77-4830-ba30-8a3c49902a04" InformativeScreenshot="3bb410bb2cc5b0c910cf66de88a668bd.jpg" Reference="52JDjAi-80e2n-luKDesgg/pyFf31Mw_0mudWaNzr3qsQ" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/courses/search/?srcUSIEQLSukw&amp;amp;qUSIEQLSAI=1783618930793;usi_pv_count=31=1783618930793;' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="39, 141, 114, 42" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='' aaname='Udemy' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="993f743a-8c76-47af-90de-d71ea854eef4" SearchSteps="FuzzySelector" />
+                      <uix:Target DesignTimeRectangle="538, 188, 50, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-ghost ud-btn-text-sm ud-btn-disabled ud-btn-icon ud-btn-icon-medium' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d9171674-e399-4b5f-9363-d1aca0495f31" SearchSteps="FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
@@ -140,14 +140,7 @@
         </ActivityFunc>
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="brGsvndQVki59WtfHQdaFA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADKklEQVRYR82Wz2sTURDHc1NBexMUb6JeRKE0b0Oth6LQq6e21n/BkyKIJxVBQTwJ/qqWUvel1dCDWHsT6g9MtBSrqCAePLQUm/TXbJJtm6TJk3ndbvLmvXbXSqpf+MCyM/Nmdt+viURCisfmGuyo0xVn8JAzGLUZZDiDIuI9j3IG3fGoc7qnZWYXjd+0+qzsIW5BD2fgcgYiJK4dhUfxmHOQjhdaiebJHZzBLc6gZEgQliK34GZvq9hOx99QWDln8MUwoEJ/yyr0vYGU3eTupXmMGoguNHpzSgdRGDnvitxkWbjTZZG8vKjZDUz2x+aP0nyK8MuDkj9vz4qpZElQTY+VxPCZnOZPi+hl+T00rxTOE2fwyRAkSZx0xPcnBVFZoamrqpSF+DlcFINtjhZfwxiuL5o/4i046izpPwaikK1oyX4MFiT4XCv0xRg6TpWFq0pyudU2WO0DLaAkwN/9oqv6u+W0vFOnBWPoOD4W5JSp8Pa57kgKCFpwawszsAAGwmZwdzV5bK4h6JDB3zl+ZylwUAR90HfjKZDk5YmJx6vBuFV0RryznRq2BJvBA1z9eIloxlriMRAvz+Z9Bo7r2wzf1fpgDPUxkMICZgwGdXCyC56dymo++K5WYdYLZ5DGAgoGg0K9CrAZLP8XBfzzKQhchHUsQC7CboNBoW4FWHA/gj2cZiDUq4C4Be2RxOHMTjwWqbEW7HpqNdShFzDUmVN8whzFmFveB9hAGhwUSkvV6zh5Rb+QUtcWfXsxX9HsBrr929DrAbHFpk4+6Y/V69bNlOUVvGYbas+KxZlqgb8+lLR4QiHOYL9fAAq7V4Ojz9tLrp8AVS4KkR4vScqkQ3t1wdXiCTeU5CivJUsZnH2wJQvSt8fLWhwhefuA2EbzS2GXwhlMGIJ83lx0xezXFaUNw+fM5xUxci6v+as4U33Ns/toXkXYOmP3qgerJE44cjfg/D9t1W9HAxO8af4IzWdUojG3mzN4bRhksyTXbcfXE84Tdq9BZ0QAeNFdX3fOwwgrxwbyDwvJY7ejbbW/kXdiduL5zS14jzeZ94VIWr6Lwj2bQYd/woXQb+3suW1Hqk6eAAAAAElFTkSuQmCC" InformativeScreenshot="48ad26f42864403d24d7b695aa9f33c5.jpg" Reference="52JDjAi-80e2n-luKDesgg/jsbies3DGU-CVwo0GQJHug" Selector="&lt;html app='chrome.exe' htmlwindowname='usi_entry_url_1=https://www.udemy.com/=1783611855619;usi_pv_count=1=1783611855619;' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' /&gt;" Url="https://www.udemy.com/" Version="V3">
-          <uix:TargetApp.Arguments>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.Arguments>
-          <uix:TargetApp.WorkingDirectory>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.WorkingDirectory>
-        </uix:TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="2ilcVHNk3UGNmA4mshDYfw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADKklEQVRYR82Wz2sTURDHc1NBexMUb6JeRKE0b0Oth6LQq6e21n/BkyKIJxVBQTwJ/qqWUvel1dCDWHsT6g9MtBSrqCAePLQUm/TXbJJtm6TJk3ndbvLmvXbXSqpf+MCyM/Nmdt+viURCisfmGuyo0xVn8JAzGLUZZDiDIuI9j3IG3fGoc7qnZWYXjd+0+qzsIW5BD2fgcgYiJK4dhUfxmHOQjhdaiebJHZzBLc6gZEgQliK34GZvq9hOx99QWDln8MUwoEJ/yyr0vYGU3eTupXmMGoguNHpzSgdRGDnvitxkWbjTZZG8vKjZDUz2x+aP0nyK8MuDkj9vz4qpZElQTY+VxPCZnOZPi+hl+T00rxTOE2fwyRAkSZx0xPcnBVFZoamrqpSF+DlcFINtjhZfwxiuL5o/4i046izpPwaikK1oyX4MFiT4XCv0xRg6TpWFq0pyudU2WO0DLaAkwN/9oqv6u+W0vFOnBWPoOD4W5JSp8Pa57kgKCFpwawszsAAGwmZwdzV5bK4h6JDB3zl+ZylwUAR90HfjKZDk5YmJx6vBuFV0RryznRq2BJvBA1z9eIloxlriMRAvz+Z9Bo7r2wzf1fpgDPUxkMICZgwGdXCyC56dymo++K5WYdYLZ5DGAgoGg0K9CrAZLP8XBfzzKQhchHUsQC7CboNBoW4FWHA/gj2cZiDUq4C4Be2RxOHMTjwWqbEW7HpqNdShFzDUmVN8whzFmFveB9hAGhwUSkvV6zh5Rb+QUtcWfXsxX9HsBrr929DrAbHFpk4+6Y/V69bNlOUVvGYbas+KxZlqgb8+lLR4QiHOYL9fAAq7V4Ojz9tLrp8AVS4KkR4vScqkQ3t1wdXiCTeU5CivJUsZnH2wJQvSt8fLWhwhefuA2EbzS2GXwhlMGIJ83lx0xezXFaUNw+fM5xUxci6v+as4U33Ns/toXkXYOmP3qgerJE44cjfg/D9t1W9HAxO8af4IzWdUojG3mzN4bRhksyTXbcfXE84Tdq9BZ0QAeNFdX3fOwwgrxwbyDwvJY7ejbbW/kXdiduL5zS14jzeZ94VIWr6Lwj2bQYd/woXQb+3suW1Hqk6eAAAAAElFTkSuQmCC" InformativeScreenshot="48ad26f42864403d24d7b695aa9f33c5.jpg" Reference="52JDjAi-80e2n-luKDesgg/jsbies3DGU-CVwo0GQJHug" Selector="&lt;html app='chrome.exe' title='Udemy*' /&gt;" Url="https://www.udemy.com/" Version="V3" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

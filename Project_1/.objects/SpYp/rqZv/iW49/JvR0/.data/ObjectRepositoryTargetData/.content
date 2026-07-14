@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ayxHOuFjPEWkbLiwzGYOzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rayaintegration.webex.com/wbxmjs/joinservice/sites/rayaintegration/meeting/download/77518035f7c94a27b650f24cef5a5bc8" DesignTimeRectangle="207, 73, 1385, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='The AI Engineer Course 2026: Complete AI Engineer Bootcamp - Goo*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' text='udemy.com/course/*' /&gt;" Guid="d5c03aae-2dd7-4998-a44d-b29fd75b58d5" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp - Goo*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="57c6b556853f557b2571775110f3808a.jpg" xmlns="">0_ryuYOMciU2eYk_AExu_Jg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

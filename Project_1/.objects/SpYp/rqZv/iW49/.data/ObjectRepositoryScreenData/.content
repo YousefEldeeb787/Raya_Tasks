@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="mgLheSwL8EqhLQiXaTW_tQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='The AI Engineer Course 2026: Complete AI Engineer Bootcamp - Goo*' /&gt;" Url="rayaintegration.webex.com/wbxmjs/joinservice/sites/rayaintegration/meeting/download/77518035f7c94a27b650f24cef5a5bc8" />
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
