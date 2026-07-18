@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, sans-serif;">
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td align="center" style="padding:30px;">
+
+                <table width="600" cellpadding="0" cellspacing="0" border="0"
+                       style="background-color:#ffffff; border-radius:10px; overflow:hidden;">
+
+                    <tr>
+                        <td style="background-color:#0078d4; color:#ffffff; padding:25px; text-align:center;">
+                            <h1 style="margin:0;">{{title}}</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:30px; text-align:center;">
+
+                            <h2 style="color:#00897b; margin-top:0;">
+                                Congratulations!
+                            </h2>
+
+                            <p style="font-size:16px; color:#333333;">
+                                {{message}}
+                            </p>
+
+                            <div style="margin:25px 0;">
+                                <img src="{{gif}}"
+                                     alt="Success"
+                                     width="220"
+                                     style="max-width:100%; border-radius:8px;">
+                            </div>
+
+                            <table width="100%" cellpadding="10" cellspacing="0"
+                                   style="border-collapse:collapse; margin-top:20px;">
+
+                                <tr>
+                                    <td style="border:1px solid #dddddd; font-weight:bold;">
+                                        Execution Date
+                                    </td>
+                                    <td style="border:1px solid #dddddd;">
+                                        {{date}}
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="border:1px solid #dddddd; font-weight:bold;">
+                                        Execution Time
+                                    </td>
+                                    <td style="border:1px solid #dddddd;">
+                                        {{time}}
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="border:1px solid #dddddd; font-weight:bold;">
+                                        Screenshot
+                                    </td>
+                                    <td style="border:1px solid #dddddd;">
+                                        Attached
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                            <p style="margin-top:25px; color:#555555;">
+                                The RPA Challenge was completed successfully.
+                                Please find the execution screenshot attached.
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color:#eeeeee; padding:15px; text-align:center; color:#666666;">
+                            {{brand}}
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
