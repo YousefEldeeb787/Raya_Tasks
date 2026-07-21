@@ -124,7 +124,6 @@
       <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="843.6,3591.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -134,7 +133,7 @@
       <Variable x:TypeArguments="x:Int32" Name="int_Successfull" />
       <Variable x:TypeArguments="scg:List(ugm:GmailMessage)" Name="MailMessages" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_EmployeesData" />
-      <Variable x:TypeArguments="x:String" Name="str_attachmnetPath" />
+      <Variable x:TypeArguments="x:String" Name="Attatcmentpath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -211,17 +210,17 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Attachmentpath" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Raya Internship" sap:VirtualizedContainerService.HintSize="518.4,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+                        <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Attachmentpath" CacheStrategy="None" DisplayName="Get Asset" FolderPath="yousefmokhtar069@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="518.4,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
                           <ui:GetRobotAsset.Value>
                             <OutArgument x:TypeArguments="x:String">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">str_attachmnetPath</CSharpReference>
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">Attatcmentpath</CSharpReference>
                             </OutArgument>
                           </ui:GetRobotAsset.Value>
                         </ui:GetRobotAsset>
                         <uga:DownloadAttachmentsConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" FilterByFileNames="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Fail" ConnectionId="d247c265-ca0f-4929-a0b7-2ea13b1c682b" DisplayName="Download Email Attachments" ExcludeInlineAttachments="False" sap:VirtualizedContainerService.HintSize="518.4,236.8" sap2010:WorkflowViewState.IdRef="DownloadAttachmentsConnections_1" SearchMode="UseSimple" UseConnectionService="True">
                           <uga:DownloadAttachmentsConnections.DestinationPath>
                             <InArgument x:TypeArguments="x:String">
-                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">str_attachmnetPath</CSharpValue>
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">Attatcmentpath</CSharpValue>
                             </InArgument>
                           </uga:DownloadAttachmentsConnections.DestinationPath>
                           <uga:DownloadAttachmentsConnections.Email>
@@ -252,7 +251,7 @@
                                 </ui:ReadRange.DataTable>
                                 <ui:ReadRange.WorkbookPath>
                                   <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">Path.Combine(str_attachmnetPath,"Employee_Registration_Data.xlsx")</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">Path.Combine(Attatcmentpath,"Employee_Registration_Data.xlsx")</CSharpValue>
                                   </InArgument>
                                 </ui:ReadRange.WorkbookPath>
                               </ui:ReadRange>
@@ -668,7 +667,7 @@
                                 <ui:DeleteFileX DisplayName="Delete Attachment File" sap:VirtualizedContainerService.HintSize="449.6,114.4" sap2010:WorkflowViewState.IdRef="DeleteFileX_2">
                                   <ui:DeleteFileX.Path>
                                     <InArgument x:TypeArguments="x:String">
-                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">Path.Combine(str_attachmnetPath , "Employee_Registration_Data.xlsx")</CSharpValue>
+                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">Path.Combine(Attatcmentpath , "Employee_Registration_Data.xlsx")</CSharpValue>
                                     </InArgument>
                                   </ui:DeleteFileX.Path>
                                 </ui:DeleteFileX>

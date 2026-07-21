@@ -1,0 +1,73 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Get Email List",
+      "activityId": "GetEmailListConnections_1",
+      "resource": "Connection",
+      "key": "d247c265-ca0f-4929-a0b7-2ea13b1c682b",
+      "id": "Connectiond247c265-ca0f-4929-a0b7-2ea13b1c682bd247c265-ca0f-4929-a0b7-2ea13b1c682bFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "d247c265-ca0f-4929-a0b7-2ea13b1c682b",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-gmail",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Get Email List",
+      "activityId": "GetEmailListConnections_1",
+      "resource": "Property",
+      "key": "d247c265-ca0f-4929-a0b7-2ea13b1c682b.Get Email List",
+      "id": "Propertyd247c265-ca0f-4929-a0b7-2ea13b1c682b.Get Email ListInboxFalseINBOXFalse",
+      "value": {
+        "ParentFolders[*].Name": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "Email folder or label",
+          "description": "The folder or label to get email messages from"
+        },
+        "ParentFolders[*].ID": {
+          "defaultValue": "INBOX",
+          "isExpression": false,
+          "displayName": "Email folder or label",
+          "description": "The folder or label to get email messages from"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Get Email List",
+        "ObjectName": "NormalizedMessage",
+        "DisplayLabel": "ParentFolders[*].Name",
+        "ParentResourceKey": "Connection.d247c265-ca0f-4929-a0b7-2ea13b1c682b"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "yousefmokhtar069@gmail.com's workspace.Attachmentpath",
+      "id": "assetyousefmokhtar069@gmail.com's workspace.Attachmentpathyousefmokhtar069@gmail.com's workspaceFalseAttachmentpathFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "yousefmokhtar069@gmail.com's workspace",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Attachmentpath",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[3.6.0-preview]",
     "UiPath.GSuite.Activities": "[3.10.10]",
-    "UiPath.System.Activities": "[26.6.1]"
+    "UiPath.System.Activities.Runtime": "[26.6.1]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -29,7 +29,8 @@
     "readyForPiP": false,
     "startsInPiP": false,
     "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "pipType": "ChildSession",
+    "robotVersion": "26.0.197"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -42,6 +43,10 @@
     },
     "fileInfoCollection": [],
     "saveToCloud": false
+  },
+  "arguments": {
+    "input": [],
+    "output": []
   },
   "expressionLanguage": "CSharp",
   "entryPoints": [
