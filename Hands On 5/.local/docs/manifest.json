@@ -1,8 +1,0 @@
-{
-  "UiPath.DocumentProcessing.Contracts": "2.2.0",
-  "UiPath.DocumentUnderstanding.Activities": "3.3.0",
-  "UiPath.Excel.Activities": "3.6.0-preview",
-  "UiPath.OCR.Activities": "4.3.0",
-  "UiPath.System.Activities": "26.6.1",
-  "UiPath.Word.Activities": "2.6.0-preview"
-}
